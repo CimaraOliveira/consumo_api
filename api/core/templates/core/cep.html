@@ -1,0 +1,29 @@
+<div class="contact-area section-padding-0-80 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading">
+                    <h2>Requisição a API</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="contact-form-area">
+                        <div class="row">
+                            <div class="col-12 col-lg-12">
+                                <label for="nome_receita"><b>DADOS DO CEP: {{ dados.cep }}</b></label>
+                                <p> Localicadade: {{ dados.localidade }}
+                                <p> Estado: {{ dados.uf }}
+                                <p> IBGE: {{ dados.ibge }}
+                            </div>
+                            <div class="col-12 text-center">
+                                <button class="btn btn-success" type="submit" onclick="location.href='/core/requisicao_api'">Pesquisar novamente</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

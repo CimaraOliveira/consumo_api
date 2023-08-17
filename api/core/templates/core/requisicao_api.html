@@ -1,0 +1,29 @@
+<div class="contact-area section-padding-0-80 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading">
+                    <h2>Requisição a API</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="contact-form-area">
+                    <form action="{% url 'requisicao_api' %}" method="POST">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-12 col-lg-12">
+                                <label for="cep"><b>CEP</b></label>
+                                <input id="cep" type="text" class="form-control" name="cep" placeholder="Ex: 01001000" required>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button class="btn btn-success" type="submit">Buscar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
